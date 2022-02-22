@@ -1,13 +1,13 @@
 <h1><%= @place.name %></h1>
 
 
-<h3>Posts</h3>
 
 <ul>
   <% for post in @place.posts %>
-    <li><%= "#{post.title}" %></li>
-    <li><%= "#{post.posted_on}" %></li>
-    <li><%= "#{post.description}" %></li>
+    <b><%= "#{post.title}" %></b><br></br>
+    <small><%= "#{post.posted_on}" %></small>
+    <p><%= "#{post.description}" %></p>
+    <br></br>
 
   <% end %>
 </ul>
